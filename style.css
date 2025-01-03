@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: #323232;
+  background: url('./retro-background.svg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif; /* Schriftart Open Sans */
+}
+
+#content {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Tabelle */
+table {
+  border: none;
+  border-collapse: collapse; /* Entfernt doppelte Rahmen */
+  width: 300px;
+  height: 300px;
+  background-color: #323232;
+}
+
+/* Zellen */
+td {
+  border: 5px solid white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 33%;
+  padding: 0;
+  color: rgb(2, 2, 2);
+}
+
+td:hover {
+    background-color: #ff44f62d !important;
+    cursor: pointer;
+}
+
+/* Entferne äußere Rahmen */
+td:first-child {
+  border-left: none;
+}
+td:last-child {
+  border-right: none;
+}
+tr:first-child td {
+  border-top: none;
+}
+tr:last-child td {
+  border-bottom: none;
+}

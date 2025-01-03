@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <linearGradient id="neon-lines" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="cyan" />
+      <stop offset="100%" stop-color="magenta" />
+    </linearGradient>
+  </defs>
+  <!-- Hintergrund -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+
+  <!-- Neonrahmen -->
+  <rect x="50" y="50" width="700" height="500" stroke="url(#neon-lines)" stroke-width="8" fill="none" />
+
+  <!-- Neonlinien für das Spielfeld -->
+  <g stroke="url(#neon-lines)" stroke-width="5">
+    <!-- Vertikale Linien -->
+    <line x1="283" y1="100" x2="283" y2="500" />
+    <line x1="517" y1="100" x2="517" y2="500" />
+    <!-- Horizontale Linien -->
+    <line x1="100" y1="233" x2="700" y2="233" />
+    <line x1="100" y1="367" x2="700" y2="367" />
+  </g>
+
+  <!-- Neon-Effektpunkte -->
+  <g fill="white" opacity="0.7">
+    <circle cx="283" cy="233" r="3" />
+    <circle cx="283" cy="367" r="3" />
+    <circle cx="517" cy="233" r="3" />
+    <circle cx="517" cy="367" r="3" />
+  </g>
+
+  <!-- Text für Retro-Look -->
+  <text x="400" y="40" text-anchor="middle" fill="url(#neon-lines)" font-size="32" font-family="sans-serif" font-weight="bold">
+    Tic Tac Toe
+  </text>
+</svg>
